@@ -31,8 +31,6 @@ The production check is `npm run build`.
 | Variable | Required | Purpose |
 | --- | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Yes | Your final `https://` domain for canonical URLs and social metadata. |
-| `ADMIN_PASSWORD` | Yes | Strong password used only for `/admin`. |
-| `ADMIN_SESSION_SECRET` | Yes | Long random value used to sign the secure admin session cookie. |
 | `BLOB_READ_WRITE_TOKEN` | Yes for admin uploads | Supplied by Vercel when Blob is connected. |
 | `NEXT_PUBLIC_DEFAULT_FRAME_URL` | Optional | Public fallback frame URL if Blob has not been connected. |
 
@@ -72,8 +70,6 @@ The active frame is stored as `profile-frame/active.png`. Uploading a replacemen
 
 ## Admin frame management
 
-1. Visit `/admin` on the deployed domain.
-2. Sign in with the value stored in `ADMIN_PASSWORD`.
 3. Upload a transparent PNG with a square 1:1 ratio.
 4. Review the preview and select **Upload and activate**.
 5. Open the visitor creator to confirm the active frame.
